@@ -9,7 +9,7 @@ import axios from 'axios'
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {userContext} from '../../logincontext';
-
+import {consumerKey,consumerSecret} from "@env"
 let  width = Dimensions.get('screen').width;
 let height = Dimensions.get('screen').height;
 let wrapperWidth= width*85/100
@@ -88,7 +88,7 @@ const [isloading,SetisLoading]=useState(true)
 
 function GetProductsFromApi(){
 
-axios.get('https://purespiruline.com/wp-json/wc/v3/products/?per_page=99&consumer_key=ck_c8cb1b136820183c176844b843873d52be83a018&consumer_secret=cs_5bffc61431c151bb6bae817caaa662944d0fac60')
+axios.get(`https://purespiruline.com/wp-json/wc/v3/products/?per_page=99&consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`)
 
 .then(async function (response){
 //console.log("retutn by woocomerce"+response.data.name);

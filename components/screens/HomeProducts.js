@@ -1,97 +1,9 @@
-// import { View, Text,StyleSheet,Dimensions ,FlatList} from 'react-native'
-// import React,{useState} from 'react'
-
-
-// let  width = Dimensions.get('screen').width;
-// let height = Dimensions.get('screen').height;
-// const wrapperHeight = height*95/100;
-// let productsdetails;
-// let tottalproductheight;
-// let categoryHeight;
-// {height>850?tottalproductheight=height*40/100:tottalproductheight=height*60/100}
-
-// {height>850?productsdetails=tottalproductheight*20/100:productsdetails=tottalproductheight*30/100}
-
-// const wrapperwidth= width*85/100;
-// {height>850? categoryHeight = wrapperHeight*25/100: categoryHeight = wrapperHeight*32/100}
-
-// const HomeProducts = () => {
-
-    
-//   const [title,Settitle] =useState([
-//     {
-//     id:1,
-//     name:"'Omega3'"
-//     },
-//     {
-//     id:2,
-//     name:"Pyco Gel"
-//     },
-//     {
-//     id:3,
-//     name:"Pain Patch"
-//     },
-//     {
-//     id:4,
-//     name:"Energy Drinks"
-//     }
-    
-//       ]);
-//     console.log(title)
-    
-//     const Products =({text})=>{
-//         return(
-//         <View style={styles.totalproducts}>
-        
-        
-//         <View style={styles.productdetails}>
-//         <Text>{text}</Text>
-//         </View>
-        
-//         </View>
-//         )
-//         }
-
-//   return (
- 
-// <FlatList style={{margin:5}}
-//   data={title}
-//   numColumns={2}
-//   keyExtractor={(title, index) => title.id }
-//   renderItem={(title) => <Products text={title.name}/> }
-// />
-
-//   )
-// }
-
-// const styles = StyleSheet.create({
-
-//     totalproducts:{
-//       height:"20%",
-//         backgroundColor:'#fff',
-//         borderRadius:8,
-//         width:wrapperwidth,
-//         marginTop:wrapperHeight*2/100
-//       },
-//       productdetails:{
-      
-//         borderWidth:1.8,
-//       borderColor:'#c9c0bb',
-//       height:productsdetails,
-//       width:wrapperwidth*36.5/100,
-//       margin:wrapperwidth*5/100
-//       }
-
-// })
-// export default HomeProducts
 
 
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView,Dimensions,Image ,Button} from 'react-native';
 import { FlatGrid } from 'react-native-super-grid';
 import MaterialIcon from '@expo/vector-icons/MaterialCommunityIcons'
-//import AppLoading from 'expo-app-loading';
-//import { useFonts } from 'expo-font';
 
 let  width = Dimensions.get('screen').width;
 let height = Dimensions.get('screen').height;
@@ -126,19 +38,7 @@ console.log(`height from console ${height}`)
 
   ]);
 
-  // let [fontsLoaded] = useFonts({
-  //   'RobotoCondensed-Regular': require('../../assets/fonts/RobotoCondensed-Regular.ttf'),
-  //   'Dosis-Light':require('../../assets/fonts/Dosis-Light.ttf'),
-  //   'TitilliumWeb-Light':require('../../assets/fonts/TitilliumWeb-Light.ttf'),
-  //   'TitilliumWeb-Regular':require('../../assets/fonts/TitilliumWeb-Regular.ttf'),
-  //   ,fontFamily:"TitilliumWeb-Regular"
-  
-  // });
-  
-  // if (!fontsLoaded) {
-  //   return <AppLoading />;
-  // }
-  
+
 
 
   return (
@@ -148,22 +48,15 @@ console.log(`height from console ${height}`)
       itemDimension={130}
       data={items}
       style={styles.gridView}
-      // staticDimension={300}
-      // fixed
+    
       spacing={10}
       renderItem={({ item }) => (
    
         <View style={[styles.itemContainer]}>
-          {/* s */}
-          {/* <Text style={styles.itemName}>{item.name}</Text>
-          <Text style={styles.itemCode}>{item.code}</Text>
-         itemConatinerImageWidth
-itemConatinerImageHeight
-         */}
+        
         <View style={styles.contentContainer}>
   <Image source={item.url} style={{resizeMode:'contain',borderRadius:8, height:itemConatinerImageHeight, marginTop:"3.5%",width:itemConatinerImageWidth,alignSelf:'center',marginRight:15}} />
-  {/* < MaterialIcon name='heart-outline'size={25} style={{backgroundColor:'#c4aead',padding:4,marginLeft:wrapperWidth*28/100,position:'absolute',justifyContent:'flex-end',borderRadius:50 }} />
-         */}
+
          
 
          <Text style={{alignSelf:'center',marginTop:-10}}>{item.name}</Text>
@@ -227,9 +120,8 @@ width:itemConatinerWidth,
   
  height:itemContainerHeight,
  width:itemConatinerWidth,
- //marginBottom:"28.5%",
+
     borderRadius:8   ,
-   //  borderWidth:1.8,
-   //  borderColor:'#c9c0bb',
+ 
    }
 });

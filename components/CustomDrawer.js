@@ -43,9 +43,7 @@ const navigation = useNavigation()
 
   return (
 <> 
-{/* 
-     <Text style={{marginTop:"10%",alignSelf:'center',fontSize:32,fontFamily:"RobotoCondensed-Bold"}}>Pure Spiruline</Text>
-     */}
+
       <Image source={require('../assets/images/128.png')} style={{height:100,width:120,alignSelf:'center',justifyContent:'center',marginTop:"10%",resizeMode:'contain'}}/>
   
 
@@ -96,12 +94,7 @@ const navigation = useNavigation()
 
 
     </View>
-{/* <View style={{flexDirection:'row',marginTop:"6%",marginBottom:10,marginLeft:"9%"}}>
-  
 
-    <Text style={{fontFamily:"NunitoSans-Bold"}}>{`PURE SPIRULINA KC Organics International Limited 3rd Floor 207  Regent Street London
-Great London UK W1B 3HH`}</Text>
-</View> */}
     </>
 
   )

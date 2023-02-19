@@ -32,8 +32,6 @@ const [total,Settotal]=useState('')
 let fi =total*5/100
 let fi2 =total-fi
 
-   //totalcal().then((res)=>console.log(res.data)).catch((e)=>console.log(e))
- 
   return (
 <View style={styles.priceandDiscount}>
 

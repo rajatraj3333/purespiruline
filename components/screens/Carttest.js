@@ -10,7 +10,7 @@ import Carts from './Carts'
 
 
 
-//console.log(cartState.productprice)
+
   return (
     <CartContext.Provider value={cartContext}>
 <Carts/>

@@ -83,7 +83,7 @@ const getdetails=async()=>{
 
 useEffect(()=>{
 
-  axios.post('https://purespiruline.com/wp-json/wc/v3/orders/?/&consumer_key=ck_c8cb1b136820183c176844b843873d52be83a018&consumer_secret=cs_5bffc61431c151bb6bae817caaa662944d0fac60',data)
+  axios.post(`https://purespiruline.com/wp-json/wc/v3/orders/?/&consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`,data)
   .then((response) => {
     console.log(response.data);
   })

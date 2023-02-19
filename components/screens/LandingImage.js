@@ -35,14 +35,9 @@ const ImageShows = ({dotssize}) => {
 
     const Changedotspoint=(dotarray)=>{
 
-        // for (let [key, value] of Object.entries(dotarray)) {
-        //     console.log(`${key}: ${value}`);
-        //   }
-
 dotarray.viewableItems.map((items)=>SetactiveIndex(items.index))
 
-       // undefined console.log(dotarray[0].index);
-    
+   
     }
 
 const [activeIndex,SetactiveIndex] =useState(1);
@@ -73,14 +68,6 @@ showsHorizontalScrollIndicator={false}
      snapToInterval={Dimensions.get('screen').width-1} 
      snapToAlignment={'center'}
      decelerationRate={'fast'} 
-    // viewabilityConfig={{
-    //     viewAreaCoveragePercentThreshold:65,
-       
-    // }}  
-       
-    // onViewableItemsChanged={({viewableItems})=>{
-    // viewableItems.map((item)=>SetactiveIndex(item.index))  
-    // }} 
 
 
 
@@ -197,13 +184,3 @@ export default ImageShows;
 
 
 
-
-
-// const getProducts=()=>{
-
-//   axios.get('https://purespiruline.com/wp-json/wc/v3/products?per_pae=100&consumer_key=ck_c8cb1b136820183c176844b843873d52be83a018&consumer_secret=cs_5bffc61431c151bb6bae817caaa662944d0fac60').then((resp)=>{
-
-//     Setproducts(resp.data)
-//     }).catch(err=>console.log(err))
-    
-// }

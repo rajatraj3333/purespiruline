@@ -10,11 +10,7 @@ let increaseappHeight ;
 
  height>1250? height=height*70/100:height=height;
 
-// switch(height){
-//   case height>1200:
-//     increase=height*70/100
-//    break;
-//   }
+
  
   console.log(`height---${height}`);
 
@@ -32,7 +28,6 @@ const serachInputwidth= wrapperwidth;
 let showcaseimgwidth;
 let showcaseimgheight;
 
-// {height>850?showcaseimgheight=wrapperwidth*18/100:showcaseimgheight=wrapperwidth*20/100}
 
 {height>850?showcaseheight=height*25/100:showcaseheight=height*25/100}
 {width>450?showcaseimgwidth=wrapperwidth*30/100:showcaseimgwidth=wrapperwidth*66/100}
@@ -62,9 +57,6 @@ const ProductsShowCase = () => {
 <View style={styles.showcase}>
 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}> 
 
-{/* <View style={[styles.showcaseImg,{  marginLeft:wrapperwidth*5/100}]}> */}
-
-{/* style={{resizeMode:'contain',height:showcaseheight,width:wrapperwidth*75/100}} */}
 
 <Image source={require('../../assets/images/carsoul/ap1.png')}  style={[styles.showcaseImg,{  marginLeft:wrapperwidth*5/100}]} />
 

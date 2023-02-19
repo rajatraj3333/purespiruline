@@ -342,21 +342,7 @@ navigation.navigate('Profile',{username,email})}/>
 
 </>
 
-{/* 
 
- <FlatList data={DataArray[17]} 
- 
-
-keyExtractor={(item, index) => 'key'+index}
- renderItem={({item})=>(
- <> 
-
- 
-
-
-
- </>
-  )}/> */}
       </ScrollView>
 
  

@@ -200,11 +200,3 @@ export default ImageShows;
 
 
 
-// const getProducts=()=>{
-
-//   axios.get('https://purespiruline.com/wp-json/wc/v3/products?per_pae=100&consumer_key=ck_c8cb1b136820183c176844b843873d52be83a018&consumer_secret=cs_5bffc61431c151bb6bae817caaa662944d0fac60').then((resp)=>{
-
-//     Setproducts(resp.data)
-//     }).catch(err=>console.log(err))
-    
-// }

@@ -24,23 +24,6 @@ const [Cart,SetCart]=useState('')
 
 
 
-
-//     const [DATA,SETDATA]=useState()
- 
-//     const {getdata} = useContext(CartContext)   
-
-
-//     // useEffect(()=>{
-
-//     // })
-
-    
-    
-//     getdata().then((ele)=>SETDATA(ele))
-  
-
-// console.log(DATA)
-
   return (
     <View>
       <Text>{ route.params.total}</Text>
